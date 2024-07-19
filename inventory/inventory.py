@@ -54,27 +54,6 @@ class Inventory():
         else:
             print(error_message)
             return False
-    
-
-    def test_add_camera_missing_description(self):
-        test_inventory = Inventory()
-        result = test_inventory.addCamera("C001", "Test camera 1", 5)
-        result = test_inventory.addCamera("C002", "Test camera 2", 10)
-        original_len = len(test_inventory.cameraList)
-
-        result = test_inventory.addCamera("C004", "", 10)
-
-        assert result == False
-        assert len(test_inventory.cameraList) == original_len
-
-    def test_add_camera_incorrect_zoom(self):
-        test_inventory = Inventory()
-        result = test_inventory.addCamera("C001", "Test camera 1", 5)
-        result = test_inventory.addCamera("C002", "Test camera 2", 10)
-        original_len = len(test_inventory.cameraList)
-        result = test_inventory.addCamera("C004", "Test camera 4", -1)
-        assert result == False
-        assert len(test_inventory.cameraList) == original_len
 
     def getAvailableCamera(self):
         output = ""
