@@ -3,7 +3,6 @@ from inventory.laptop import Laptop
 
 
 class Inventory():
-    pass
     def __init__(self):
         self.cameraList = []  
         self.laptopList = []
