@@ -10,10 +10,9 @@ class Camera(item):
         self._opticalZoom = opticalZoom
 
     def getOpticalZoom(self):
-        return self._opticalZoom
 
+        return self._opticalZoom
+      
     def __str__ (self):
         return super().__str__() \
         + "{:<10}".format(self._opticalZoom)
-
-
