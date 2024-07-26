@@ -18,7 +18,7 @@ class ResourceCenter:
             if not 1 <= choice <= 5:
                 print("Invalid choice, please enter again.\n")
         return choice
-
+ 
     def main(self):
         # Refactor (A): Extract constants for choice integers
         CHOICE_ADD = 1
