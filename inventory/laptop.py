@@ -15,3 +15,5 @@ class Laptop(item):
         def __str__ (self):
             return super().__str__() \
             + "{:<10}\n".format(self._os)
+            + "{:<10}\n".format(self._os)
+
